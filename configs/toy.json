@@ -1,0 +1,14 @@
+{
+  "input_csv": "examples/toy_data.csv",
+  "output_dir": "outputs/toy",
+  "dataset_column": "dataset",
+  "record_column": "record_key",
+  "label_column": "label",
+  "base_prefix": "base_",
+  "liwc_prefix": "liwc_",
+  "n_splits": 5,
+  "n_repeats": 10,
+  "random_state": 42,
+  "control_draws": 3,
+  "models": ["logreg", "linear_svm"]
+}

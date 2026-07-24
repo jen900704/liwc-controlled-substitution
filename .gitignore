@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+outputs/
+dist/
+build/
+*.egg-info/
+.DS_Store
+
+# Local release-review documents
+RELEASE_AUDIT.md
+FILE_MANIFEST.md
+EXCLUDED_FILES.md
+CITATION.cff
