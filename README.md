@@ -1,9 +1,10 @@
 # LIWC Controlled Substitution
 
-This release candidate contains a small, auditable implementation of the
+This repository contains a small, auditable implementation of the
 controlled-substitution framework from “Disentangling the Interpretive and
 Predictive Roles of LIWC: Controlled Substitution in Depression-Related
-Classification.”
+Classification” (EMNLP 2026, Main Conference;
+[arXiv:2607.22952](https://arxiv.org/abs/2607.22952)).
 
 The framework holds participant-level cross-validation splits and base
 representations fixed while replacing the LIWC block:
@@ -50,6 +51,12 @@ python scripts/run_primary.py --config configs/toy.json
 The command writes fold-level scores, draw-averaged scores, condition summaries,
 dataset-level contrasts, exact sign-flip p-values, and BH-adjusted q-values to
 `outputs/toy/`. The toy data are entirely synthetic.
+
+Run the unit tests with:
+
+```bash
+python -m unittest discover -s tests
+```
 
 Category-level interpretation can be exercised separately:
 
@@ -120,5 +127,13 @@ representations.
 
 ## Citation
 
-Citation details are placeholders pending publication metadata and author
-approval. See `CITATION.cff`.
+```bibtex
+@inproceedings{yeh2026liwc,
+  title     = {Disentangling the Interpretive and Predictive Roles of {LIWC}: Controlled Substitution in Depression-Related Classification},
+  author    = {Yeh, Hsiang-Chen and Zhao, Xiutian and Mahapatra, Aurosweta and Suresh Chandra, Shreeram and Boyd, Ryan L. and Sisman, Berrak},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2026},
+  eprint    = {2607.22952},
+  archivePrefix = {arXiv}
+}
+```
